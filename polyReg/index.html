@@ -1,0 +1,35 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.1"> </script>
+	  <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <title>React App</title>
+  </head>
+  <body>
+    <div class="container p-3 my-3 bg-dark text-white">
+      <div class = "row"  >
+        <div class = "col" style="text-align:center">
+          <input id="file-input" class="btn btn-outline-light" type="file" />
+          <div id="file-content"></div>
+        </div>
+        <div class="col" style="text-align:center">
+          order : <input id="order" class="btn btn-outline-light" type="number" name="order" /><button class="btn btn-outline-light" onClick=changeOrder()>change</button><br><br>
+          epoch : <input id="epoch" class="btn btn-outline-light" type="number" name="order" /><button class="btn btn-outline-light" onClick=changeEpoch()>change</button><br><br>
+        </div>
+        <!-- <input id="directory-input" type="file" webkitdirectory="" directory="" />  -->
+        <div class = "col" style="text-align:center">  
+          x : <input id = "x" class="btn btn-outline-light" type="text" name="x">
+          <button class="btn btn-outline-light" onClick=dis()>display</button> 
+        </div>  
+      </div>
+      <div id="canvasid" style="text-align:center"></div>
+    </div>
+
+  </body>
+</html>
