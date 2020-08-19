@@ -16,7 +16,7 @@
       <div class = "row"  >
         <div class = "col" style="text-align:center">
           <input id="file-input" class="btn btn-outline-light" type="file" />
-          <div id="file-content"></div>
+          
         </div>
         <div class="col" style="text-align:center">
           order : <input id="order" class="btn btn-outline-light" type="number" name="order" /><button class="btn btn-outline-light" onClick=changeOrder()>change</button><br><br>
@@ -25,7 +25,8 @@
         <!-- <input id="directory-input" type="file" webkitdirectory="" directory="" />  -->
         <div class = "col" style="text-align:center">  
           x : <input id = "x" class="btn btn-outline-light" type="text" name="x">
-          <button class="btn btn-outline-light" onClick=dis()>display</button> 
+          <button class="btn btn-outline-light" onClick=dis()>display</button> <br>
+          <div id="file-content"></div>
         </div>  
       </div>
       <div id="canvasid" style="text-align:center"></div>

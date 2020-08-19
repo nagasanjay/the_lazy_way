@@ -25,12 +25,8 @@ function train() {
 
 function listen() {
     var x = transferRecognizer.listen(result => {
-        // - result.scores contains the scores for the new vocabulary, which
-        //   can be checked with:
         console.log("here");
         const words = transferRecognizer.wordLabels();
-        // `result.scores` contains the scores for the new words, not the original
-        // words.
         console.log(words.length);
         var max = 0;
         var score = 0;
@@ -53,6 +49,7 @@ function listen() {
 async function app() {
     baseRecognizer = speechCommands.create('BROWSER_FFT');
     await baseRecognizer.ensureModelLoaded();
+    console.log("loaded");
     transferRecognizer = baseRecognizer.createTransfer('name');
 }
 

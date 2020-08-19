@@ -163,9 +163,9 @@ function draw() {
             }
             cur++;
         });
-        console.log("training");
+        //console.log("training");
     } else {
-        console.log("idle");
+        //console.log("idle");
     }
 //  }
 
@@ -199,5 +199,5 @@ function draw() {
   }
   endShape();
 
-  console.log(tf.memory().numTensors);
+  //console.log(tf.memory().numTensors);
 }     
